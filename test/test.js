@@ -6,13 +6,22 @@ describe.skip('Testing the fibonacci Function', () => {
     assert.equal(fibonacci(4), 6);
   });
 });
+
 describe.skip('Testing the fibonacci Function', () => {
   it('Minimum passing requirement', () => {
     assert.equal(fibonacci(4), 4);
   });
 });
+
 describe('Testing the fibonacci Function', () => {
   it('Returning 1 as the first fibonacci', () => {
     assert.equal(fibonacci(1), 1);
   });
 });
+
+describe('Testing the fibonacci Function', () => {
+  it('Returning 1 as the second fibonacci', () => {
+    assert.equal(fibonacci(2), 1);
+  });
+});
+
