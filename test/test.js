@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import fibonacci from '../fibonnaci.js';
+import fibonacci from '../fibonacci.js';
 
 describe.skip('Testing the fibonacci Function', () => {
   it('Failing test of fibonacci', () => {
@@ -26,27 +26,25 @@ describe('Testing the second fibonacci Function', () => {
 });
 
 describe('Testing the third fibonacci Function', () => {
-    it('Returning 2 as the third fibonacci', () => {
-      assert.equal(fibonacci(3), 2);
-    });
+  it('Returning 2 as the third fibonacci', () => {
+    assert.equal(fibonacci(3), 2);
   });
-  
-  describe('Testing the fifth fibonacci Function', () => {
-    it('Returning 5 as the fifth fibonacci', () => {
-      assert.equal(fibonacci(5), 5);
-    });
-  });
-  
-  describe('Testing the tenth fibonacci Function', () => {
-    it('Returning 55 as the tenth fibonacci', () => {
-      assert.equal(fibonacci(10), 55);
-    });
-  });
-  
-  describe('Testing for handling negative values', () => {
-    it('Returning error message for negative numbers', () => {
-      assert.equal(fibonacci(-3), 'n cannot be 0 or less than 0');
-    });
-  });
-  
+});
 
+describe('Testing the fifth fibonacci Function', () => {
+  it('Returning 5 as the fifth fibonacci', () => {
+    assert.equal(fibonacci(5), 5);
+  });
+});
+
+describe('Testing the tenth fibonacci Function', () => {
+  it('Returning 55 as the tenth fibonacci', () => {
+    assert.equal(fibonacci(10), 55);
+  });
+});
+
+describe('Testing for handling negative values', () => {
+  it('Returning error message for negative numbers', () => {
+    assert.equal(fibonacci(-3), 'n cannot be 0 or less than 0');
+  });
+});
